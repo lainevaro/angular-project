@@ -1,0 +1,20 @@
+<ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+	<li [ngbNavItem]="1">
+		<a ngbNavLink routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
+		<ng-template ngbNavContent>
+		</ng-template>
+	</li>
+	<li [ngbNavItem]="2">
+		<a ngbNavLink routerLink="/gifs" routerLinkActive="active" ariaCurrentWhenActive="page">Gifs</a>
+		<ng-template ngbNavContent>
+		</ng-template>
+	</li>
+	<li [ngbNavItem]="3">
+		<a ngbNavLink routerLink="/stickers" routerLinkActive="active" ariaCurrentWhenActive="page">Stickers</a>
+		<ng-template ngbNavContent>
+		</ng-template>
+	</li>
+</ul>
+
+<div [ngbNavOutlet]="nav" class="mt-2"></div>
+<router-outlet></router-outlet>

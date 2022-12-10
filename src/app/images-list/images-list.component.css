@@ -1,0 +1,16 @@
+.search input{
+    width: 900px;
+    margin-bottom: 50px;
+}
+
+.card {
+    margin: 2px;
+}
+
+.card-img-top {
+    border: solid 1px #ced4da;
+}
+
+.card-body {
+    border: solid 1px #ced4da;
+}

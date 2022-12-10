@@ -1,0 +1,22 @@
+<div class="search d-flex flex-column align-items-center">
+    <div class="p-2">
+        <h4 for="typeahead-basic">Search for {{key}}</h4>
+    </div>
+    <div class="p-2">
+        <input id="typeahead-basic" type="text" class="form-control" #image (keyup.enter)="search(image.value)"/>
+    </div>
+</div>
+
+<div class="d-flex flex-row flex-wrap justify-content-center">
+    <div style="width: 18rem;" class="card p-0" *ngFor="let image of images">
+        <img class="card-img-top" [src]="image.images.downsized.url" alt="Image">
+        <div class="card-body">
+            <h5 class="card-title">Tittle</h5>
+            <p class="card-text">{{image.title}}</p>
+        </div>
+        <div class="card-body">
+        <p class="card-text">Type: {{image.type}}</p>
+        </div>
+    </div>
+</div>
+
